@@ -32,14 +32,41 @@ body
 	font-size: 16px
 	min-width: 320px
 	position: relative
-	line-height: 1.75
+	//line-height: 1.75
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
+.navbar
+	border-bottom: 1px solid #cbcbcb
+.menu_wrap
+	padding: 10px 0
+	display: flex
+	flex-wrap: wrap
+	justify-content: space-between
+	align-items: center
+	
+	ul
+		list-style-type: none
+		display: flex
+		margin: 0
+		padding: 0
+		li
+			margin: 0 5px
+			padding: 7px 20px
+			a
+				text-decoration: none
+				color: #363636
 
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
+		.menu_blog
+			border: 1px solid #c82425
+			border-radius: 7px
+			a
+				color: #c82425
+	.menu_nav
+		flex-grow: 2
+	.top_logo
+		flex-grow: 1
 
-@import "media" // Всегда в конце
+
+
+@import "media"
