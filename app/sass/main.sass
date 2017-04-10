@@ -32,7 +32,6 @@ body
 	font-size: 16px
 	min-width: 320px
 	position: relative
-	//line-height: 1.75
 	font-family: $default-font
 	overflow-x: hidden
 	opacity: 1
@@ -75,10 +74,12 @@ body
 		flex-grow: 1
 .main_page
 	position: relative
-	background-image: url("../img/main_img.jpg")
-	background-size: auto
+	background-image: url("../img/main_img.png")
+	background-size: 550px 500px
 	background-repeat: no-repeat
+	background-position: -210px -200px
 	height: 500px
+	z-index: 0
 	.main_broker
 		position: absolute
 		right: 15px
@@ -89,6 +90,12 @@ body
 		font-size: 14px
 		text-align: center
 		letter-spacing: 1px
+		min-width: 185px
+		img
+			//padding-right: 5px
+			float: left
+		p
+			margin: 8px 0
 	.main_title
 		text-align: center
 		margin-top: 150px
@@ -97,23 +104,53 @@ body
 			letter-spacing: 1px
 			font-size: 50px
 			font-weight: 300
+			line-height: 1.1
 		p
 			margin: 0
 	.main_descr
-		width: 65%
-		margin: auto
+		width: 55%
+		margin-left: 15%
+		font-size: 14px
+		z-index: 20
 	.main_btn
-		display: inline-block
-		background-color: #ea2d2e
-		padding: 10px 25px
-		border-radius: 7px
-		margin-top: 30px
-		a
-			color: #fff
-			text-decoration: none
-			font-size: 14px
-			&:hover
-				background-color: 
+		float: right
+.main_btn
+	display: inline-block
+	background-color: #ea2d2e
+	padding: 10px 25px
+	border-radius: 5px
+	margin-top: 30px
+	a
+		color: #fff
+		text-decoration: none
+		font-size: 14px
+		letter-spacing: 1px
+		&:hover
+			color: #bdbdbd
+.main_bg_2
+	background-image: url("../img/main_img2.png")
+	background-size: 650px 500px
+	background-repeat: no-repeat
+	z-index: 99
+	background-position: right -130px top -40px
+	.bg_wrap
+		padding-top: 200px
+		.main_title
+			h2
+				font-size: 46px
+				font-weight: 300
+				margin-left: 15%
+				line-height: 1.1
+				p
+					margin: 0
+		.main_descr
+			width: 50%
+			margin-left: 15%
+		.main_btn
+			margin-left: 15%
+			padding: 10px 55px
+		
+			
 
 
 @import "media"
