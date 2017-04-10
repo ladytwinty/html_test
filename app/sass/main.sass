@@ -51,22 +51,69 @@ body
 		margin: 0
 		padding: 0
 		li
-			margin: 0 5px
-			padding: 7px 20px
+			padding: 5px 20px
 			a
 				text-decoration: none
 				color: #363636
+				transition: .5s all
+				&:hover
+					color: #c82425
 
 		.menu_blog
 			border: 1px solid #c82425
 			border-radius: 7px
+			transition: .5s all
 			a
 				color: #c82425
+				&:hover
+					color: #363636
+					.menu_blog
+						border: 1px solid #363636
 	.menu_nav
 		flex-grow: 2
 	.top_logo
 		flex-grow: 1
-
+.main_page
+	position: relative
+	background-image: url("../img/main_img.jpg")
+	background-size: auto
+	background-repeat: no-repeat
+	height: 500px
+	.main_broker
+		position: absolute
+		right: 15px
+		top: 0
+		background-color: #000
+		color: #fff
+		padding: 10px
+		font-size: 14px
+		text-align: center
+		letter-spacing: 1px
+	.main_title
+		text-align: center
+		margin-top: 150px
+		color: #363636
+		h1
+			letter-spacing: 1px
+			font-size: 50px
+			font-weight: 300
+		p
+			margin: 0
+	.main_descr
+		width: 65%
+		margin: auto
+	.main_btn
+		display: inline-block
+		background-color: #ea2d2e
+		padding: 10px 25px
+		border-radius: 7px
+		margin-top: 30px
+		a
+			color: #fff
+			text-decoration: none
+			font-size: 14px
+			&:hover
+				background-color: 
 
 
 @import "media"
