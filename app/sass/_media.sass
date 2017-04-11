@@ -3,14 +3,55 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
-@media only screen and (max-width : 1200px)
-	/**/
+@media only screen and (max-width : 1100px)
+	.main_page
+		.main_title
+			h1
+				font-size: 38px
+	.main_bg_2
+		.bg_wrap
+			.main_title
+				h2
+					font-size: 38px
 
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
-	/**/
+	.main_bg_2 
+		.bg_wrap 
+			.main_descr
+				margin-left: 10%
+			.main_title
+				margin-left: 10%
+	.main_page
+		.main_descr
+			margin-left: 25%
+@media only screen and (max-width : 992px)
+	.main_page
+		.main_descr
+			width: 65%
 
+@media only screen and (max-width : 976px)
+	.menu_wrap 
+		.top_logo
+			text-align: center
+			margin-bottom: 20px
+		.menu_nav
+			display: flex
+			justify-content: center
+			margin-bottom: 20px
+		.menu_icon
+			margin: auto
+	
+	.main_bg_2 
+		.bg_wrap 
+			.main_descr
+				margin-left: 0
+			.main_title
+				margin-left: 0
+	
+	.row_wrap
+		top: 1220px
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px)
